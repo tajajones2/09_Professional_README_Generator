@@ -84,3 +84,37 @@ function renderLicenseLink(license) {
     }
     return link;
   }
+
+  // function create markdown for readme
+  
+  function generateMarkdown(data) {
+    var licenseSection = renderLicenseSection(data.license);  
+    var {title, description, usage, contributing, tests, userName,emailAddress} = data;
+    return `
+  # ${title}
+      
+  ## Description
+  ${description}
+  ## Table of Contents 
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [Credits](#credits)
+  - [License](#license)
+  - [How to Contriubute](#contribution)
+  - [Test](#tests)
+  - [Questions](#questions)
+  ## Usage
+  ${usage}
+  ## License
+  ${licenseSection}
+  ## How to Contribute
+  ${contributing}
+  ## Tests
+  ${tests}
+  ## Questions
+  - Github Profile: [GitHub Profile](https://github.com/${userName}
+  - Contact Me via email(${emailAddress}) with any questions.
+  `;
+  }
+  
+  module.exports = generateMarkdown;
