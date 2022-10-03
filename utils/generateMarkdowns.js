@@ -41,3 +41,46 @@ function renderLicenseBadge(license) {
     return badge;
   }
   
+  // TODO: Create a function that returns the license link
+function renderLicenseLink(license) {
+    var link = "";
+    switch (license) {
+      case "Apache":
+        link = "https://opensource.org/licenses/Apache-2.0";
+        break;
+      case "Boost":
+        link = "https://www.boost.org/LICENSE_1_0.txt";
+        break;
+      case "BSD 3":
+        link = "https://opensource.org/licenses/BSD-3-Clause";
+        break;
+      case "CC0":
+        link = "http://creativecommons.org/publicdomain/zero/1.0/";
+        break;
+      case "Eclipse":
+        link = "https://opensource.org/licenses/EPL-1.0";
+        break;
+      case "GNU GPL v3":
+        link = "https://www.gnu.org/licenses/gpl-3.0";
+        break;
+      case "IBM":
+        link = "https://opensource.org/licenses/IPL-1.0";
+        break;
+      case "ISC":
+        link = "https://opensource.org/licenses/ISC";
+        break;
+      case "MIT":
+        link = "https://opensource.org/licenses/MIT";
+        break;
+      case "Mozilla":
+        link = "https://opensource.org/licenses/MPL-2.0";
+        break;
+      case "SIL":
+        link = "https://opensource.org/licenses/OFL-1.1";
+        break;
+      case "Unlicense":
+        link = "http://unlicense.org/";
+        break;
+    }
+    return link;
+  }
