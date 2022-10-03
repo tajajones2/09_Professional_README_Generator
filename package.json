@@ -1,5 +1,23 @@
 {
   "dependencies": {
     "inquirer": "^9.1.2"
-  }
+  },
+  "name": "challenge9",
+  "description": "",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tajajones2/09_Professional_README_Generator.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tajajones2/09_Professional_README_Generator/issues"
+  },
+  "homepage": "https://github.com/tajajones2/09_Professional_README_Generator#readme"
 }
