@@ -84,9 +84,18 @@ function renderLicenseLink(license) {
     }
     return link;
   }
-
-  // function create markdown for readme
   
+  // this will return the license section of the readme to declared functions
+  
+  function renderLicenseSection(license) {
+    var licenseSection = "";
+  
+    if (license === "") {
+      return license;
+
+
+  // function create markdown for readme 
+
   function generateMarkdown(data) {
     var licenseSection = renderLicenseSection(data.license);  
     var {title, description, usage, contributing, tests, userName,emailAddress} = data;
