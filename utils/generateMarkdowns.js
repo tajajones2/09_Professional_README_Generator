@@ -41,7 +41,7 @@ function renderLicenseBadge(license) {
     return badge;
   }
   
-  // TODO: Create a function that returns the license link
+  
 function renderLicenseLink(license) {
     var link = "";
     switch (license) {
